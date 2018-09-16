@@ -1,0 +1,15 @@
+.App-content, h1 {
+    font-size: 16px;
+}
+
+.App-content-inner {
+    text-align: -webkit-center;
+}
+
+.App-content-inner-table {
+    border: 4px dashed #efefef;
+}
+
+.App-content-inner-table, tr,td {
+    text-align: center;
+}

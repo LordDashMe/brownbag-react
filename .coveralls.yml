@@ -1,0 +1,3 @@
+exclude_no_stmt: true
+coverage_clover: output/coverage/react/clover.xml
+json_path: output/coverage/react/coveralls-upload.json

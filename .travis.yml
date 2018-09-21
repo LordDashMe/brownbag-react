@@ -1,0 +1,25 @@
+# Required to run your project under the correct environment.
+language: node_js
+
+# Versions of NodeJS you want your project run with.
+node_js:
+  - "stable"
+
+# Commands to be run before your environment runs.
+before_script:
+
+# Commands you want to run that will verify your build.
+script: 
+  - rm package-lock.json
+  - npm install
+  - npm install coveralls --save-dev
+  - npm run test
+
+# Execute another command after success of the script.
+after_success:
+  - node_modules/coveralls/bin/coveralls.js
+
+# Customize when the notification emails are sent.
+notifications:
+  on_success: never
+  on_failure: always

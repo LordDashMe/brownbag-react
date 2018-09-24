@@ -9,6 +9,10 @@ class App extends Component {
     return value1 + value2;
   }
 
+  computeBool() {
+    return true;
+  }
+
   render() {
     return (
       <div className="App">

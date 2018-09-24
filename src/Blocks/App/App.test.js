@@ -7,6 +7,11 @@ it('should compute two given number', () => {
   expect(app.computeAdd(1, 1)).toBe(2);
 });
 
+it('should compute true', () => {
+  let app = new App();
+  expect(app.computeBool()).toBe(true);
+});
+
 it('renders without crashing', () => {
   const div = document.createElement('div');
   ReactDOM.render(<App />, div);
